@@ -25,6 +25,8 @@ warehouse = warehouse.merge(
 )
 
 warehouse["average_score"] = (warehouse["math_score"] + warehouse["science_score"]) / 2
+warehouse["rank"] = (warehouse["average_score"].rank(ascending=False))
+warehouse["status"] = (warehouse["average_score"].apply(lambda x: "Pass" if x >= 50 else "Fail"))
 
 
 # Load to database -> Load stage
