@@ -42,3 +42,8 @@ warehouse.to_sql(
 connection.close()
 
 print("Warehouse loaded!")
+
+# Export data to csv file & excel file
+warehouse.to_csv("student_report.csv", index=False)
+warehouse.to_excel("student_report.xlsx", index=False)
+print("Warehouse Data Exported to CSV & Excel files.")
