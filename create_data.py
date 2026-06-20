@@ -13,7 +13,7 @@ students = pd.DataFrame({
 
 math = pd.DataFrame({
     "student_id": [1, 2, 3, 4, 5],
-    "math_score": [85, 78, 98, 90, 92]
+    "math_score": [85, 78, 98, 90, 95]
 })
 
 science = pd.DataFrame({
